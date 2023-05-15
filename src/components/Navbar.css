@@ -1,4 +1,4 @@
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,26 +9,26 @@ nav{
 }
 
 .nav-img {
-    width: 4rem;
-    height: 4rem;
-    padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    text-decoration: none;
-    gap: 2rem;
-    margin-right: 4rem;
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  gap: 2rem;
+  margin-right: 4rem;
 }
 
 .nav-title {
-    display: flex;
+  display: flex;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: rgb(0, 102, 255);
-    font-size: 1.1rem;
-    padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  color: rgb(0, 102, 255);
+  font-size: 1.1rem;
+  padding: 0.25rem 0.5rem;
 }
