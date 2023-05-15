@@ -11,9 +11,9 @@ const Navbar = () => {
             </div>
             
             <ul>
-                <li><NavLink to='/' style={({ isActive }) => (isActive? { textDecoration: 'underline' }: { textDecoration: 'none' })}>Rockets</NavLink></li>
-                <li><NavLink to='/missions' style={({ isActive }) => (isActive? { textDecoration: 'underline' }: { textDecoration: 'none' })}>Missions</NavLink></li>
-                <li><NavLink to='/profile' style={({ isActive }) => (isActive? { textDecoration: 'underline' }: { textDecoration: 'none' })}>My Profile</NavLink></li>
+                <li><NavLink className="nav-link" to='/' style={({ isActive }) => (isActive? { textDecoration: 'underline' }: { textDecoration: 'none' })}>Rockets</NavLink></li>
+                <li><NavLink className="nav-link" to='/missions' style={({ isActive }) => (isActive? { textDecoration: 'underline' }: { textDecoration: 'none' })}>Missions</NavLink></li>
+                <li><NavLink className="nav-link" to='/profile' style={({ isActive }) => (isActive? { textDecoration: 'underline' }: { textDecoration: 'none' })}>My Profile</NavLink></li>
             </ul>   
         </nav>
     )
