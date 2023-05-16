@@ -14,6 +14,7 @@ export const fetchMission = createAsyncThunk('missions/fetchMission', async () =
     mission_id: mission.mission_id,
     mission_name: mission.mission_name,
     description: mission.description,
+    reserved: false,
   }));
 
   return array;
@@ -22,6 +23,33 @@ export const fetchMission = createAsyncThunk('missions/fetchMission', async () =
 const missionList = createSlice({
   name: 'missions',
   initialState,
+  reducers: {
+    joinMission(state, action) {
+      const newState = state.missions.map((mission) => {
+        if(mission.mission_id === action.payload) {
+          return {
+            ...mission,
+            reserved: true
+          }
+        }
+        return mission
+      })
+      return{missions: [...newState]}
+    }
+  },
+  leaveMission(state, action) {
+    const newState = state.missions.map((mission) => {
+      if(mission.mission_id === action.payload) {
+        return {
+          ...mission,
+          reserved: false
+        }
+      }
+      return mission
+    })
+    return{missions: [...newState]}
+  }
+},
   extraReducers: (builder) => {
     builder
       .addCase(fetchMission.fulfilled, (state, action) => {
