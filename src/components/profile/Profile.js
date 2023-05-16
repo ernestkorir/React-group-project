@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import './Profile.css'
+import './Profile.css';
 
 const Profile = () => {
   const rocketList = useSelector((state) => state.rocket);
@@ -28,6 +28,5 @@ const Profile = () => {
       </div>
     </section>
   );
-
-}
+};
 export default Profile;
