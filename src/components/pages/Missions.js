@@ -1,17 +1,17 @@
-import { useEffect } from "react";
-import { fetchMission } from "../../redux/missions/missionsSlice";
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { fetchMission } from '../../redux/missions/missionsSlice';
 import './Missions.css';
 
 const Missions = () => {
-    const allMissions = useSelector((state) => state.mission.missions)
-    const dispatch = useDispatch()
+  const allMissions = useSelector((state) => state.mission.missions);
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(fetchMission())
-    }, [])
+  useEffect(() => {
+    dispatch(fetchMission());
+  }, [dispatch]);
 
-    return(
+  return (
         <div>
             <table className="main-table">
                 <thead className="table-head">
@@ -30,6 +30,6 @@ const Missions = () => {
                 </tbody>
             </table>
         </div>
-    )
+  );
 };
 export default Missions;
