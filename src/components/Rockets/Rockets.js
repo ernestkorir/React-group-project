@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getrocket } from '../../redux/rockets/rocketsSlice';
 import Rocket from './SingleRocket';
+import './rocket.css';
 
 const Rockets = () => {
   const RocketList = useSelector((state) => state.rocket);
