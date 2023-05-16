@@ -52,9 +52,10 @@ const missionList = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchMission.fulfilled, (state, action) => {
-        state.missions = action.payload;
-      });
+      .addCase(fetchMission.fulfilled, (state, action) => ({
+        ...state,
+        missions: action.payload
+      }));
   },
 });
 

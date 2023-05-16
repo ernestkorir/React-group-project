@@ -30,20 +30,22 @@ const Missions = () => {
                             <td>{mission.description}</td>
                             <td className='status'>
                                 {mission.reserved ? (
-                                    <span>Active Member</span>
+                                    <span className='active-member'>Active Member</span>
                                 ) : (
-                                    <span>Not A member</span>
+                                    <span className='non-active'>NOT A MEMBER</span>
                                 )}
                             </td>
                             <td className='status'>
                                 {mission.reserved ? (
                                     <button
                                     type='button'
+                                    className='leave-btn'
                                     onClick={() => dispatch(leaveMission(mission.mission_id))}
                                     >Leave Mission</button>
                                 ): (
                                     <button
                                     type='button'
+                                    className='join-btn'
                                     onClick={() => dispatch(joinMission(mission.mission_id))}
                                     >Join Mission</button>
                                 )}
