@@ -20,7 +20,10 @@ const Rocket = ({
           </span>
           {description}
         </p>
-        
+        <button className={reserved ? 'reservedbutton' : 'reserverocket'} type="button" onClick={() => dispatch(rocketActions.toggleReserved(id))}>
+          {' '}
+          {reserved ? 'Cancel reservation' : 'Reserve Rocket' }
+        </button>
       </div>
     </div>
   );

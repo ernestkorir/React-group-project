@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Rockets from './pages/Rockets';
-import Missions from './pages/Missions'
-import Profile from './pages/Profile'
+import Missions from './pages/Missions';
+import Profile from './pages/Profile';
 import './App.css';
 
 function App() {
