@@ -36,19 +36,19 @@
 .non-active {
   background-color: gray;
   color: #fff;
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 5px;
 }
 
 .active-member {
   background-color: #0290ff;
   color: #fff;
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 4px;
 }
 
 .join-btn {
-  padding: .7rem;
+  padding: 0.7rem;
   font-size: 1rem;
   background-color: transparent;
   color: gray;
@@ -57,8 +57,8 @@
 }
 
 .leave-btn {
-  padding: .7rem;
-  font-size: .9rem;
+  padding: 0.7rem;
+  font-size: 0.9rem;
   background-color: transparent;
   color: red;
   border-color: red;
