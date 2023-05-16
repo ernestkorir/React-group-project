@@ -7,7 +7,7 @@ const initialState = {
     missions: []
 }
 
-const fetchMission = createAsyncThunk('missions/fetchMission', async() => {
+export const fetchMission = createAsyncThunk('missions/fetchMission', async() => {
         const res = await axios(url)
         const result = res.data
         const array = result.map((mission) => ({
