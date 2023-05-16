@@ -20,10 +20,10 @@ const Missions = () => {
                         <th>Description</th>
                     </tr>
                 </thead>
-                <tbody className="table-body">
+                <tbody>
                     {allMissions.map((mission) => (
-                        <tr>
-                            <td>{mission.mission_name}</td>
+                        <tr className="single-mission" key={mission.mission_id}>
+                            <td className="name">{mission.mission_name}</td>
                             <td>{mission.description}</td>
                         </tr>
                     ))}
