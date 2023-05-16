@@ -35,21 +35,21 @@ const missionList = createSlice({
         return mission
       })
       return{missions: [...newState]}
+    },
+
+    leaveMission(state, action) {
+      const newState = state.missions.map((mission) => {
+        if(mission.mission_id === action.payload) {
+          return {
+            ...mission,
+            reserved: false
+          }
+        }
+        return mission
+      })
+      return{missions: [...newState]}
     }
   },
-  leaveMission(state, action) {
-    const newState = state.missions.map((mission) => {
-      if(mission.mission_id === action.payload) {
-        return {
-          ...mission,
-          reserved: false
-        }
-      }
-      return mission
-    })
-    return{missions: [...newState]}
-  }
-},
   extraReducers: (builder) => {
     builder
       .addCase(fetchMission.fulfilled, (state, action) => {
@@ -57,5 +57,7 @@ const missionList = createSlice({
       });
   },
 });
+
+export const { joinMission, leaveMission } = missionList.actions
 
 export default missionList.reducer;
