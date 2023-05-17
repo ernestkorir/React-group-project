@@ -16,8 +16,8 @@
   width: 100%;
 }
 
-.tmission td,
-.trocket td {
+.tmission li,
+.trocket li {
   padding: 0.5rem;
 }
 
