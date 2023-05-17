@@ -1,7 +1,7 @@
 import { MemoryRouter } from 'react-router-dom';
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import Navbar from '../components/Navbar/Navbar';
+import Navbar from '../components/navbar/Navbar';
 
 afterEach(() => {
   cleanup();
