@@ -11,37 +11,37 @@ const Profile = () => {
     <section className="profilePage">
         <div className='mission-reserve'>
           <h2>My Missions</h2>
-          <table className='tmission'>
-            <tbody>
+          <div className='tmission'>
+            <ul>
               { joinedMissions.length > 0 ? (
                 joinedMissions.map((joined) => (
-                <tr key={joined.mission_id}>
-                  <td>{joined.mission_name}</td>
-                </tr>
+                <li key={joined.mission_id}>
+                  {joined.mission_name}
+                </li>
                 ))
               ) : (
                 <p>No Mission Joined</p>
               )}
-            </tbody>
-          </table>
+            </ul>
+          </div>
       </div>
       <div className='rocket-reserve'>
         <h2> My Rockects</h2>
-        <table className='trocket'>
-          <tbody className="display me">
+        <div className='trocket'>
+          <ul className="display me">
             { rocketFiltered.length > 0 ? (
               rocketFiltered.map((rocket) => (
-                <tr key={rocket.id}>
-                  <td>
+                <li key={rocket.id}>
+
                     {rocket.rocketName}
-                  </td>
-                </tr>
+
+                </li>
               ))
             ) : (
                 <p className="title-three">No Rocket booked </p>
             )}
-          </tbody>
-        </table>
+          </ul>
+        </div>
       </div>
     </section>
   );
