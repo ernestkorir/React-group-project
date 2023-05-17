@@ -11,13 +11,12 @@
 }
 
 .tmission,
-.trocket{
+.trocket {
   border: 1px solid gray;
   width: 100%;
 }
 
 .tmission td,
-.trocket td{
-  padding: .5rem;
+.trocket td {
+  padding: 0.5rem;
 }
-
