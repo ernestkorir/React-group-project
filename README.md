@@ -37,9 +37,7 @@
 
 # 📖 [React-group-project] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[React-group-project]** is a group project that was done to practice the use of React Redux and the APIs to fetch and display data. The project also involves reserving the rockets, joining the missions and displaying them on the profile section. 
+> Space Travellers' Hub Is a web application built with react and redux and spaceXAPI. Users can view rockets and missions and create resrvations.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -54,27 +52,14 @@
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[One is able to see the rockets and missions when they enter the site]**
-- **[The buttons are interactive and do their work accordingly]**
-- **[One can be able to view the reserved rockets and joined missions in the Profile]**
+- **One is able to see the rockets and missions when they enter the site**
+- **The buttons are interactive and do their work accordingly**
+- **One can be able to view the reserved rockets and joined missions in the Profile**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,8 +111,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  npx hint .
-  npx stylelint "\*_/_.{css,scss}"
+`npm run test`
 ```
 
 
@@ -147,9 +131,10 @@ To run tests, run the following command:
 
 👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@ErnestKorir](https://github.com/githubhandle)
+- Twitter: [twitter](https://twitter.com/ernestbore3)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ernest-bore-3b6042211)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,9 +142,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+-  **Mobile responsiveness**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,7 +169,7 @@ If you like this project please like and share. You can also reach out to my pla
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my partner and reviewers of the code for helping make the site better.
+I would like to thank Microverse and my partner for the guidances throughout the Project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
