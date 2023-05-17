@@ -16,12 +16,12 @@
   width: 100%;
 }
 
-.tmission li,
-.trocket li {
-  padding: 0.5rem;
-}
-
 ul li {
   text-decoration: none;
   list-style: none;
+}
+
+.tmission li,
+.trocket li {
+  padding: 0.5rem;
 }
