@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](Comming Soon)
+- [Live Demo Link](https://react-group-project-delta.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +95,7 @@ Install this project with:
 
 ```sh
   cd react-group-project
-  yarn install
+  npm install
 ```
 
 ### Usage
@@ -103,7 +103,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  npm install
+  npm start
 ```
 
 ### Run tests
