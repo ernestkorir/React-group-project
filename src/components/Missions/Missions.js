@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { leaveMission, joinMission} from '../../redux/missions/missionsSlice';
+import { leaveMission, joinMission } from '../../redux/missions/missionsSlice';
 
 import './Missions.css';
 

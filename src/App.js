@@ -8,7 +8,7 @@ import Profile from './pages/Profile';
 import { fetchMission } from './redux/missions/missionsSlice';
 
 function App() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchMission());
