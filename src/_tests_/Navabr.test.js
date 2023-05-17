@@ -1,19 +1,33 @@
+import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import React from 'react';
-import { render, cleanup } from '@testing-library/react';
 import Navbar from '../components/navbar/Navbar';
 
-afterEach(() => {
-  cleanup();
-});
-
 describe('Navbar', () => {
-  it('renders navbar', () => {
-    const tree = render(
+  test('renders the navbar component', () => {
+    render(
       <MemoryRouter>
         <Navbar />
       </MemoryRouter>,
     );
-    expect(tree).toMatchSnapshot();
+
+    // Assert that the logo is rendered
+    const logoElement = screen.getByAltText('Space Travelers Hub');
+    expect(logoElement).toBeInTheDocument();
+
+    // Assert that the title is rendered
+    const titleElement = screen.getByText('Space Travelers Hub');
+    expect(titleElement).toBeInTheDocument();
+
+    // Assert that the navigation links are rendered
+    const rocketsLink = screen.getByText('Rockets');
+    expect(rocketsLink).toBeInTheDocument();
+
+    const missionsLink = screen.getByText('Missions');
+    expect(missionsLink).toBeInTheDocument();
+
+    const profileLink = screen.getByText('My Profile');
+    expect(profileLink).toBeInTheDocument();
   });
+
+  // You can add more specific tests for the NavLink components if needed
 });

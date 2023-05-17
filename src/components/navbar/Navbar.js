@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => (
         <nav>
             <div className='nav-title'>
-            <img className='nav-img' src={LogoNavbar} />
+            <img className='nav-img' src={LogoNavbar} alt='Space Travelers Hub'/>
             <h1>Space Travelers Hub</h1>
             </div>
 
