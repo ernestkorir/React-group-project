@@ -1,11 +1,8 @@
 import Missions from '../components/Missions/Missions';
 
-const Mission = () => {
-
-  return (
+const Mission = () => (
         <div>
             <Missions/>
         </div>
-  );
-};
+);
 export default Mission;
