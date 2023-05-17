@@ -10,9 +10,9 @@ const Profile = () => {
   
   return (
     <section className="profilePage">
-        <div>
+        <div className='mission-reserve'>
   <h2>My Missions</h2>
-  <table>
+  <table className='tmission'>
     <tbody>
       { joinedMissions.length > 0 ? (
         joinedMissions.map((joined) => (
@@ -26,10 +26,10 @@ const Profile = () => {
     </tbody>
   </table>
 </div>
-      <div>
-        <h2 className="title"> My Rockects</h2>
-        <table>
-          <ul className="display me">
+      <div className='rocket-reserve'>
+        <h2> My Rockects</h2>
+        <table className='trocket'>
+          <tbody className="display me">
             { rocketFiltered.length > 0 ? (
               rocketFiltered.map((rocket) => (
                 <tr key={rocket.id}>
@@ -39,11 +39,9 @@ const Profile = () => {
                 </tr>
               ))
             ) : (
-              <li>
                 <p className="title-three">No Rocket booked </p>
-              </li>
             )}
-          </ul>
+          </tbody>
         </table>
       </div>
     </section>

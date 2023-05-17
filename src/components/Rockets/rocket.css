@@ -52,18 +52,6 @@
   font-weight: 30;
 }
 
-.title {
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  margin: 0;
-  padding: 0.5rem 0;
-}
-
-.profilePage {
-  display: flex;
-  gap: 30px;
-}
-
 .Width {
   width: 70%;
 }

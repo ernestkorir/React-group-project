@@ -1,5 +1,23 @@
-.reserved_missions {
+.profilePage {
+  display: flex;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  border-collapse: collapse;
 }
+
+.mission-reserve,
+.rocket-reserve {
+  width: 40%;
+  margin: 2rem;
+}
+
+.tmission,
+.trocket{
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.tmission td,
+.trocket td{
+  padding: .5rem;
+}
+
