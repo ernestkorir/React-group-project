@@ -1,17 +1,17 @@
-import React from "react";
-import renderer from "react-test-renderer";
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { Provider } from 'react-redux';
 import Rockets from '../components/Rockets/Rockets';
-import { Provider } from "react-redux";
-import store from "../redux/store";
+import store from '../redux/store';
 
-describe("Test Rocket component", () => {
-  it("If it renders well", () => {
+describe('Test Rocket component', () => {
+  it('If it renders well', () => {
     const tree = renderer.create(
-    <Provider store={store}> 
+    <Provider store={store}>
         <Rockets />
-    </Provider>
+    </Provider>,
     )
-    .toJSON();
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

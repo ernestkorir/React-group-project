@@ -1,17 +1,17 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import Mission from "../pages/Missions";
-import { Provider } from "react-redux";
-import store from "../redux/store";
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { Provider } from 'react-redux';
+import Mission from '../pages/Missions';
+import store from '../redux/store';
 
-describe("Test Mission component", () => {
-  it("Renders well", () => {
+describe('Test Mission component', () => {
+  it('Renders well', () => {
     const tree = renderer.create(
-    <Provider store={store}> 
+    <Provider store={store}>
         <Mission />
-    </Provider>
+    </Provider>,
     )
-    .toJSON();
+      .toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
