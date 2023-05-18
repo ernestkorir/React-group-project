@@ -1,0 +1,66 @@
+.main-table {
+  border: 1px solid black;
+  margin: 2rem;
+  border-collapse: collapse;
+}
+
+.table-head th {
+  border-right: 1px solid black;
+  padding: 0.7rem;
+  font-size: 1.3rem;
+}
+
+.single-mission {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.single-mission td {
+  border-right: 1px solid black;
+  padding: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.single-mission:nth-of-type(odd) {
+  background-color: whitesmoke;
+}
+
+.status {
+  width: 11%;
+}
+
+.non-active {
+  background-color: gray;
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.active-member {
+  background-color: #0290ff;
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+.join-btn {
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: gray;
+  border-color: gray;
+  border-radius: 3px;
+}
+
+.leave-btn {
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: red;
+  border-color: red;
+  border-radius: 3px;
+}

@@ -1,0 +1,27 @@
+.profilePage {
+  display: flex;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mission-reserve,
+.rocket-reserve {
+  width: 40%;
+  margin: 2rem;
+}
+
+.tmission,
+.trocket {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.tmission li,
+.trocket li {
+  padding: 0.5rem;
+}
