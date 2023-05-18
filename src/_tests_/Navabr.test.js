@@ -28,6 +28,4 @@ describe('Navbar', () => {
     const profileLink = screen.getByText('My Profile');
     expect(profileLink).toBeInTheDocument();
   });
-
-  // You can add more specific tests for the NavLink components if needed
 });
